@@ -23,6 +23,6 @@ How It Works
 
 How to Run Locally
   1-Clone the repository:
-    - git clone https://github.com/your-username/athan-app.git
+    - git clone (https://github.com/piso777/Athan.git)
     - cd athan-app
   2-Open the index.html file in a browser.
