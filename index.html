@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/all.min.css" />
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <title>Prayer Time</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center bg-black text-light fs-1 fw-bolder p-2 m-0">
+        الصلاة عماد الدين
+      </h1>
+    </header>
+    <section class="selectCity">
+      <form action="">
+        <select
+          class="city form-select text-center fs-3 fw-bolder"
+          aria-label="Default select example"
+        >
+          <option selected>اختر مدينتك</option>
+        </select>
+      </form>
+    </section>
+    <section class="dayAndTime bg-black">
+      <h3 class="myCityName text-center p-3 fs-3 fw-bolder text-white"></h3>
+      <h2 class="dateOfDay text-center p-3 fs-3 fw-bolder text-white"></h2>
+    </section>
+    <section class="times_of_prayer pt-5 mt-5">
+      <ul
+        class="container prayer d-flex justify-content-between fs-2 fw-bolder"
+      >
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">الفجر</h2>
+          <h3 id="fajr-time" dir="ltr" class="text-center fs-4 fw-bolder mt-3">
+            5 am
+          </h3>
+        </li>
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">الضحي</h2>
+          <h3
+            id="shrook-time"
+            dir="ltr"
+            class="text-center fs-4 fw-bolder mt-3"
+          >
+            5 am
+          </h3>
+        </li>
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">الظهر</h2>
+          <h3 id="duhri-time" dir="ltr" class="text-center fs-4 fw-bolder mt-3">
+            5 am
+          </h3>
+        </li>
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">العصر</h2>
+          <h3 id="asr-time" dir="ltr" class="text-center fs-4 fw-bolder mt-3">
+            5 am
+          </h3>
+        </li>
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">المغرب</h2>
+          <h3
+            id="magreb-time"
+            dir="ltr"
+            class="text-center fs-4 fw-bolder mt-3"
+          >
+            5 am
+          </h3>
+        </li>
+        <li class="p-2 praySecTime">
+          <h2 class="text-white ps-1 fs-2">العشاء</h2>
+          <h3 id="eshaa-time" dir="ltr" class="text-center fs-4 fw-bolder mt-3">
+            5 am
+          </h3>
+        </li>
+      </ul>
+    </section>
+    <footer class="bg-black text-center fs-2 fw-bolder text-white p-3">
+      &copy; حقوق الطبع والنشر محفوظة للموقع
+    </footer>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./Js/all.min.js"></script>
+    <script src="./Js/bootstrap.min.js"></script>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>

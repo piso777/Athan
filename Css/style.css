@@ -1,0 +1,98 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive Select Dropdown */
+.selectCity {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.selectCity select {
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Prayer Times Section */
+.times_of_prayer {
+    background-image: url("../Images/background.png");
+    background-attachment: fixed;
+    background-position: center;
+    height: 568px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.times_of_prayer .prayer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.praySecTime {
+    padding: 15px;
+    border: thick solid #ccc;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Responsive Design for Tablets and Phones */
+@media (max-width: 1024px) {
+    .selectCity select {
+        width: 80%;
+    }
+
+    .times_of_prayer .prayer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .praySecTime {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .times_of_prayer{
+        height: auto;
+    }
+    .fs-1 {
+        font-size: 1.5rem !important;
+    }
+    .fs-2 {
+        font-size: 1.3rem !important;
+    }
+    .fs-3 {
+        font-size: 1.1rem !important;
+    }
+    .fs-4 {
+        font-size: 1rem !important;
+    }
+    .praySecTime {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Footer */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
